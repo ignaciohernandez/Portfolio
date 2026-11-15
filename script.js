@@ -146,11 +146,12 @@ function init() {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const name = document.getElementById('name').value.trim();
+      const lastname = document.getElementById('lastname').value.trim();
       const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
+      const phone = document.getElementById('phone').value.trim();
 
-      if (!name || !email || !message) {
-        formStatus.textContent = 'Por favor completá todos los campos.';
+      if (!name || !lastname || !email || !phone) {
+        formStatus.textContent = 'Por favor completá todos los campos obligatorios.';
         formStatus.className = 'form-status error';
         return;
       }

@@ -43,7 +43,8 @@
     </div>
   </nav>
 
-  <!-- Hero -->
+  <main>
+  <!-- Hero: sección principal con efecto de escritura (mejorar con animación de fondo) -->
   <section class="hero" id="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
@@ -72,7 +73,7 @@
     </div>
   </section>
 
-  <!-- Metrics -->
+  <!-- Metrics: contadores animados (agregar más métricas relevantes) -->
   <section class="metrics" id="metrics">
     <div class="container">
       <div class="metrics-grid">
@@ -96,7 +97,7 @@
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About: sobre mí con datos del CV (mejorar con foto de mayor resolución) -->
   <section class="section" id="about">
     <div class="container">
       <h2 class="section-title"><span class="mono">01.</span> Sobre mí</h2>
@@ -122,6 +123,8 @@
           </p>
         </div>
         <div class="about-card">
+          <!-- Imagen representativa extraída del CV (mejorar con foto de mayor resolución; comprimir con TinyPNG) -->
+          <img src="profile.png" alt="Ignacio Hernández" class="about-img" width="120" height="120" />
           <div class="about-avatar">IH</div>
           <ul class="about-info">
             <li><span class="label">Ubicación</span><span>Buenos Aires, Argentina</span></li>
@@ -322,7 +325,40 @@
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Tabla de tecnologías y hobbies (consgina del TP) -->
+  <section class="section" id="tech-table">
+    <div class="container">
+      <h2 class="section-title"><span class="mono">06.</span> Tecnologías y Hobbies</h2>
+      <table class="tech-table">
+        <thead>
+          <tr>
+            <th>Tecnologías que conozco</th>
+            <th>Tecnologías que quiero conocer</th>
+            <th>Hobbies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5, CSS3, JavaScript</td>
+            <td>React, Vue, TypeScript</td>
+            <td>Leer, música, gaming</td>
+          </tr>
+          <tr>
+            <td>Node.js, Express, MySQL</td>
+            <td>Docker, Kubernetes, AWS</td>
+            <td>Deportes, cine, tecnología</td>
+          </tr>
+          <tr>
+            <td>Linux, VMware, Proxmox</td>
+            <td>Machine Learning, IA</td>
+            <td>Viajar, fotografía</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Projects: cards con links a GitHub (agregar capturas de pantalla) -->
   <section class="section" id="projects">
     <div class="container">
       <h2 class="section-title"><span class="mono">05.</span> Proyectos</h2>
@@ -419,7 +455,7 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact: formulario y datos de contacto (integrar con Formspree) -->
   <section class="section" id="contact">
     <div class="container">
       <h2 class="section-title"><span class="mono">06.</span> Contacto</h2>
@@ -427,17 +463,24 @@
         <p class="contact-text">
           ¿Tenés un proyecto en mente o querés conversar? No dudes en contactarme.
         </p>
+        <!-- Formulario sencillo (consigna TP): nombre, apellido, email, telefono y submit -->
         <form class="contact-form" id="contactForm">
           <div class="form-group">
-            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            <input type="text" id="name" name="name" placeholder="Nombre" required />
           </div>
           <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Tu email" required />
+            <input type="text" id="lastname" name="lastname" placeholder="Apellido" required />
           </div>
           <div class="form-group">
-            <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+            <input type="email" id="email" name="email" placeholder="Email" required />
           </div>
-          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <div class="form-group">
+            <input type="tel" id="phone" name="phone" placeholder="Telefono" required />
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Mensaje (opcional)" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
           <p class="form-status" id="formStatus"></p>
         </form>
         <div class="contact-grid">
@@ -461,6 +504,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer class="footer">
     <p>&copy; 2026 Ignacio Hernández. Hecho con HTML, CSS y JavaScript.</p>

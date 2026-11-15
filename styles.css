@@ -287,6 +287,16 @@ body {
   margin: 0 auto 24px;
 }
 
+.about-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  margin: 0 auto 16px;
+  display: block;
+}
+
 .about-info {
   list-style: none;
   text-align: left;
@@ -753,6 +763,37 @@ body {
 
 .project-card:hover {
   transform: translateY(-4px) rotateX(2deg);
+}
+
+/* Tech table */
+.tech-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tech-table th,
+.tech-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.tech-table th {
+  background: var(--accent-glow);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.tech-table tr:last-child td {
+  border-bottom: none;
+}
+
+.tech-table tr:hover td {
+  background: var(--bg-alt);
 }
 
 /* Scroll reveal */
